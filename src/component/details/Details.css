@@ -1,0 +1,39 @@
+main {
+    padding: 2rem;
+}
+
+main>img {
+    width: 100%;
+    border: 1px solid white;
+    
+}
+
+#prix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#description {
+    margin-bottom: 20px;
+}
+
+#description>p {
+    margin-bottom: 10px;
+}
+
+#category {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+#button {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;
+}
