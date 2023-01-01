@@ -31,14 +31,14 @@ function Navbar() {
 				<button className="navbar__burger" onClick={handleShowLinks}>
 					<span className="burger-bar" />
 				</button>
-				<h1 class="title">
+				<h1 className="title">
 					<Link to={"/"}>My Store</Link>
 				</h1>
 			</div>
-			<div class="icon">
+			<div className="icon">
 				<p class="pricenav">{cart.length}</p>{" "}
 				<div>
-					<i class="fa-solid fa-cart-shopping" />{" "}
+					<i className="fa-solid fa-cart-shopping" />{" "}
 				</div>{" "}
 			</div>
 			<div className="navbar__links">

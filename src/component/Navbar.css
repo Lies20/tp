@@ -39,7 +39,10 @@
 
 @media screen and (max-width:768px) {
 
-   
+   .title {
+    position: absolute;
+    left: 4rem;
+   }
 
     .title>a {
         text-decoration: none;
