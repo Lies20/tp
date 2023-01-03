@@ -17,3 +17,12 @@ article{
 .price{
     padding: 15px;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
