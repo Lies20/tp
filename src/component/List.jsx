@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function List() {
-  return (
+  const  [product, setProduct]=useState([])
+
+
+ 
+
+    return (
     <div>
       <section class="list">
                 <article>
