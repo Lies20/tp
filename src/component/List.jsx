@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 function List() {
   const  [product, setProduct]=useState([])
 
-sd
- 
+   fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>console.log(json))
 
     return (
     <div>
