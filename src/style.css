@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    color-scheme: dark;
+}
+
+.list{
+    list-style: none;}
+article{
+    border: solid ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    height: 100px;
+    
+}
+.price{
+    padding: 15px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.brands{
+    display: flex;
+    flex-direction: column;
+    margin-left: -75px;
+}
