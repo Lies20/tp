@@ -1,0 +1,19 @@
+html {
+    color-scheme: dark;
+}
+
+.list{
+    list-style: none;}
+article{
+    border: solid ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    height: 100px;
+}
+.price{
+    padding: 15px;
+}
