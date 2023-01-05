@@ -12,6 +12,8 @@ function Navbar() {
 		setShowLinks(!showLinks);
 	};
 
+	console.log(cart);
+
 	// return (
 	// 	<div>
 	// 		<header>
