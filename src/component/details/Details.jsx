@@ -1,7 +1,7 @@
 import { valueToNode } from "@babel/types";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./Details.css";
 
 function Details() {
@@ -46,7 +46,9 @@ function Details() {
 						</span>
 					</div>
 				</div>
-				<div id="button">Add to cart</div>
+				<Link to='/cart'>
+					<div id="button">Add to cart</div>
+				</Link>
 			</article>
 		</main>
 	);

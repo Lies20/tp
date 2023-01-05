@@ -13,7 +13,7 @@ function App() {
 			<Routes>
 				<Route path="/details/:id" element={<Details />} />
 				<Route path="/" element={<List />} />
-				{/* <Cart /> */}
+				<Route path="/cart" element={<Cart />} />
 			</Routes>
 		</CartContextProvider>
 	);
