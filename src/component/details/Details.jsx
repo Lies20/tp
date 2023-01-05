@@ -1,11 +1,13 @@
 import { valueToNode } from "@babel/types";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { CartContext } from "../../context/CartContextProvider";
 import "./Details.css";
 
 function Details() {
 	const { id } = useParams();
+	const { cart } = useContext(CartContext);
 	const [product, setProduct] = useState([]);
 
 	useEffect(() => {
@@ -13,6 +15,10 @@ function Details() {
 			.then((res) => res.json())
 			.then((json) => setProduct(json));
 	}, []);
+
+	const addToCart = (e) => {
+		cart.push(product);
+	};
 
 	return (
 		<main>
@@ -47,7 +53,9 @@ function Details() {
 					</div>
 				</div>
 				<Link to='/cart'>
-					<div id="button">Add to cart</div>
+					<button id="button" onClick={addToCart}>
+						Add to cart
+					</button>
 				</Link>
 			</article>
 		</main>
