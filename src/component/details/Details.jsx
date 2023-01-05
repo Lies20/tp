@@ -1,13 +1,24 @@
-import React from "react";
+import { valueToNode } from "@babel/types";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
 import "./Details.css";
 
 function Details() {
+	const { id } = useParams();
+	const [product, setProduct] = useState([]);
+
+	useEffect(() => {
+		fetch(`https://fakestoreapi.com/products/${id}`)
+			.then((res) => res.json())
+			.then((json) => setProduct(json));
+	}, []);
+
 	return (
 		<main>
 			<img src="img/chart.jpg" alt="chat" />
 			<article id="prix">
-				<h1>Product</h1>
-				<div id="montant">100euros</div>
+				<h1>{product.title}</h1>
+				<div id="montant">100eu</div>
 			</article>
 			<article id="description">
 				<p>Brand</p>

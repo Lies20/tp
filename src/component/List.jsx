@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Details from "./details/Details";
 
 function List() {
 	const [product, setProduct] = useState([]);
@@ -14,14 +16,16 @@ function List() {
 		<div>
 			<section class="list">
 				{product.slice(0, 7).map((value, index) => (
-					<article>
-						<img class="img" src={value.image} alt="" />
-						<div className='brands'>
-							<h2 class="brand"> </h2>
-							<p>{value.title}</p>
-						</div>
-						<p class="price">{value.price}</p>
-					</article>
+					<Link to={"/details/" + value.id}>
+						<article>
+							<img class="img" src={value.image} alt="" />
+							<div className='brands'>
+								<h2 class="brand"> </h2>
+								<p>{value.title}</p>
+							</div>
+							<p class="price">{value.price}</p>
+						</article>
+					</Link>
 				))}
 			</section>
 		</div>
